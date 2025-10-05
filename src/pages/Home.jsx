@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import movieAwardLogo from '../assets/undraw_awards_faq6.svg'
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         <div className="header__container">
             <div className="movie__title--header">
                 <h1>America's best global <span className="purple">movie</span> retriever</h1>
+              <img src={movieAwardLogo} alt="" />
                 <h2>Can't find your favorite <span className="purple">movies</span>?</h2>
                 <p>Well, come and search for <span className="purple">movies</span> with us!</p>
             </div>

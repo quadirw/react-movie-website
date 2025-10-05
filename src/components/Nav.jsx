@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Nav = () => {
+    
   return (
     <nav>
         <div className="nav__container">
@@ -14,12 +15,12 @@ const Nav = () => {
                 Sign-Up
             </button>
             <button className='movie__searchbar'>
-                <FontAwesomeIcon icon="magnifying-glass" />
+                <input type="text" className='text' /><FontAwesomeIcon icon="magnifying-glass" />
             </button>
             </div>
             <ul className="nav__links">
                 <li className="nav__list">
-                    <a href='' className="nav__link">Home</a>
+                    <a href='/movies' className="nav__link">Home</a>
                 </li>
                 <li className="nav__list">
                     <a href='/Searching/:id' className="nav__link">Movies</a>
