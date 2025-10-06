@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState , useEffect } from 'react';
 
-async function FetchMovies() {
+ function FetchMovies() {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-       fetch('https://www.omdbapi.com/?i=tt3896198&apikey=8ecfc63b&s=batman')
+       fetch('https://www.omdbapi.com/?i=tt3896198&apikey=8ecfc63b&s=')
             .then(response => response.json())
             .then(data => setMovies(data))
             .catch(error => console.error(error));
